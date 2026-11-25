@@ -1,0 +1,8 @@
+services:
+  case-workbench:
+    build: .
+    image: case-collab-workbench:latest
+    container_name: case-collab-workbench
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
